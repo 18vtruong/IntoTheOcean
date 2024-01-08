@@ -33,8 +33,7 @@ This project was created using Visual Studio 2022. It is recommended for user to
 5. Run the Project (if applicable)
 
 
-
 ## Acknowledgments
 
-Give credit to any third-party libraries, tools, or resources that you used or were inspired by during the development of your project.
+The final product for the project will be a web application which is designed and made to connect with users with the same mindset, raise funds and advocate sustainability in marine life. This product and report will be presented to the Computer Science Department as well as the advisor of CPSC 491. The web application can be opened and run by Visual Studio 2022. In addition, the web application will then continue to transform into a mobile application for further improvement and success. The application will be easily downloaded in the App store via iPhone for personal use and the additional material given is to help provide step-by-step guidelines. To note, the application will continue to create new versions to fix bugs, improve the infrastructure as well as adding new ideas to the software.
 
