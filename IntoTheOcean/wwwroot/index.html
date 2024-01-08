@@ -1,0 +1,156 @@
+﻿<!---
+    Vivian Truong
+    Professor Morrison
+    CSPC 491-03
+    Into the Ocean Application
+    10 September 2023
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Into the Ocean Blog</title>
+</head>
+<body>
+    <header>
+        <div class="theheader">
+            <div class="title">
+                <h1>Into the Ocean Blog</h1>
+                <p>Donate today to Ocean Conservancy!</p>
+            </div>
+
+        </div>
+    </header>
+<!-------------------------------------------------------------ALL THE TABS -------------------------------------------->
+<nav>
+    <ul class="tabs">
+        <li><a href="#tab-create">Blog Post</a></li>
+        <li><a href="#tab-posts">Create Posts</a></li>
+        <li><a href="#tab-fun-facts">Fun Facts</a></li>
+        <li><a href="#tab-posts">Contact Us</a></li>
+        <li><a href="#tab-howtohelp">How to Help</a></li>
+    </ul>
+</nav>
+
+<!---------------------------                MAIN BODY           ------------------------------------------------ -->
+<main>
+
+    <!--BLOG POST TAB -->
+    <section id="tab-posts" class="tab-content">
+        <h2>Blog Posts</h2>
+        <div class="blog-posts">
+
+        </div>
+    </section>
+
+    <!--CREATE BLOG POST TAB -->
+    <section id="tab-create" class="tab-content">
+        <h2>Create a New Blog Post</h2>
+
+        <br><br>
+        <label for="personName">Name:</label>
+        <input type="text" id="personName" name="personName" required>
+        <br><br>
+        <form id="blog-post-form">
+            <label for="postTitle">Subject:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+            <br><br>
+
+            <label for="postContent">Content:</label>
+            <textarea id="postContent" name="postContent" required></textarea>
+            <br><br>
+
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div id="notificationContainer" class="notification-container" style="display: none;">
+            <div id="notification" class="notification">
+                Yay! The post has been submitted on the Main Blog Page!
+                <button id="CloseNotificationButton" class="close-notification">X</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------------------------FUN FACTS TAB--------------------------------------------->
+    <section id="tab-fun-facts" class="tab-content">
+        <h2>Fun Facts</h2>
+        <div class="fun-facts" id="funFactsContainer">
+            <!-- All the Fun facts will show -->
+        </div>
+        <!-- Encouragment donation in funfact tab-->
+        <div class="encourage-donation">
+            <p>You Can Help by Donating Today!</p>
+        </div>
+    </section>
+
+
+    <!----------------------------------------------------------CONTACT US TAB---------------------------------------->
+
+    <section id="tab-contact" class="tab-content">
+        <h2>Contact Us Page</h2>
+        <form id="contact-form">
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" name="contactName" style="width: 80%;" required>
+            <br><br>
+
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" name= "contactEmail" class="width-emailinput" required>
+            <br><br>
+
+            <label for="contactMessage">Message:</label>
+            <textarea id="contactMessage" name="contactMessage" required class="width-messageinput"></textarea>
+            <br><br>
+
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <!-- Thank you message after submission for contact us page -->
+        <div class="thank-you" id="thank-you" style="display: none;">
+            <h2>Thank You for Contacting Us!</h2>
+            <p>We will get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+
+
+    <!--------------------------------------------------HOW TO HELP TAB----------------------------------------------------------->
+    <section id="tab-howtohelp" class="tab-content">
+        <h2>Ways to Help</h2>
+        <!--Three tabs: Events, Donations, The Shop -->
+        <div class="large-tabs">
+            <div class="large-tab" id="tab-events">
+                <a href="events.html">Events</a>
+            </div>
+
+            <div class="large-tab" id="tab-donations">
+                <a href="donations.html">Donations</a>
+            </div>
+            <div class="large-tab" id="tab-shop">
+                <a href="shopping.html">The Shop</a>
+            </div>
+        </div>
+        <!-- Add content for the three tabs -->
+
+
+
+
+    </section>
+
+
+
+
+</main>
+<footer>
+    <p>&copy; 2023 Into the Ocean Blog</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

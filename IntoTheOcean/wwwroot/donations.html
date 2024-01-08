@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate to Ocean Conservancy</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=2">
+</head>
+<body>
+    <h1>Donate to Ocean Conservancy</h1>
+
+    <div class="donation-form">
+        <h2 id="donation-message">Make a Donation</h2>
+        <p>Your support helps us protect the oceans and marine life. Every dollar counts. Thank you for your contribution!</p>
+
+        <form action="" method="post" id="donation-form">
+            <label for="amount">Donation Amount ($):</label>
+            <input type="text" id="amount" name="amount" required><br>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="creditCard">Credit Card Number:</label>
+            <input type="text" id="creditCard" name="creditCard" required><br>
+
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration" placeholder="MM/YYYY" required><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br>
+
+            <input type="submit" value="Donate">
+
+
+        </form>
+    </div>
+
+    <div class="thank-you" id="thank-you" style="display: none;">
+        <h2>Thank You for Your Donation!</h2>
+        <p>Your generosity makes a difference in protecting our oceans.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const donationForm = document.getElementById('donation-form');
+            const thankYouMessage = document.getElementById('thank-you');
+            const donationMessage = document.getElementById('donation-message');
+
+            donationForm.addEventListener('submit', function (event) {
+                event.preventDefault(); 
+                // Hide the donation form
+                donationForm.style.display = 'none';
+
+                // Hides the "Make a Donation" message
+                donationMessage.style.display = 'none';
+                document.querySelector('.donation-form p').style.display = 'none';
+
+                // Show the thank you message
+                thankYouMessage.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
